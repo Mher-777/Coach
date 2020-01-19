@@ -1,6 +1,12 @@
 @font-face {
-  font-family: "", sans-serif;
-  src: url("../fonts/") format("woff2"),
-    url("../fonts/") format("woff");
+  font-family: "Orkney-Bold", sans-serif;
+  src: url("../fonts/Orkney-Bold.woff2") format("woff2"),
+    url("../fonts/Orkney-Bold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Orkney-Regular", sans-serif;
+  src: url("../fonts/Orkney-Regular.woff2") format("woff2"),
+    url("../fonts/Orkney-Regular.woff") format("woff");
   font-display: swap;
 }

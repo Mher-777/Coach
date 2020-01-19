@@ -1,20 +1,36 @@
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
 *,
 *::after,
-*::before{
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
-a{
-    display: inline-block;
-    text-decoration: none;
+a {
+  display: inline-block;
+  text-decoration: none;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-form, input, button, select, option{
-    outline: none;
+form,
+input,
+button,
+select,
+option {
+  outline: none;
+}
+body {
+//   font-family: "Nunito", sans-serif;
+//   font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+.container {
+  max-width: 1580px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
