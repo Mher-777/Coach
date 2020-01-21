@@ -11,6 +11,7 @@ $(function () {
         infinite: false,
         prevArrow: '<button class="video__review-arrows arrow-left"><img src="./images/arrows-left-black.svg" alt=""></button>',
         nextArrow: '<button class="video__review-arrows arrow-right"><img src="./images/arrows-right-black.svg" alt=""></button>',
+        rows: 0,
         
     });
     $('.calendar__inner-slider').slick({
@@ -26,9 +27,17 @@ $(function () {
         arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        adaptiveHeight: true,
+        rows: 0,
         prevArrow: '<button class="about-slider__box-arrows arrow-left"><img src="./images/arrows-left.svg" alt=""></button>',
         nextArrow: '<button class="about-slider__box-arrows arrow-right"><img src="./images/arrows-right.svg" alt=""></button>',
+        responsive: [
+            {
+                breakpoint: 490,
+                settings: {
+                    autoplay: true,
+                }
+            },
+        ]
     });
    
     $('.book-lesson__subscribe-checkbox-wrapper label').on('click', function () {
@@ -43,5 +52,10 @@ $(function () {
     $('.faq-question__item').on('click', function () {
         $(this).toggleClass('active')
     })
+
+    $('.header__top-nav').on('click', function () {
+        $('.header__top-menu').slideToggle()
+    })
     var mixer = mixitup('.gallery__wrapper');
+    new WOW().init();
 });

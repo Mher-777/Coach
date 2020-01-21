@@ -28,6 +28,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 30px;
+  min-height: 320px;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1580px;
